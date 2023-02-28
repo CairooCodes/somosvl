@@ -21,6 +21,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 <meta property="og:url" content="<?php echo $url_site; ?>" />
 <meta property="og:image" content="<?php echo $URI->base("/assets/img/$icon"); ?>" />
 <meta property="og:description" content="<?php echo $description; ?>" />
+<meta name="facebook-domain-verification" content="ouh1a7fxa6m4u4ku006ubjxfqp9eo2"   />
 
 <link rel="stylesheet" href="<?php echo $URI->base('/assets/css/style.css') ?>">
 <link href="<?php echo $URI->base("/assets/img/icon.jpg"); ?>" rel="icon">
