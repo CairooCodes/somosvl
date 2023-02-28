@@ -33,6 +33,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 <html lang="pt-br">
 
 <head>
+	<title><?php echo $name ?> Somos VL - Consultoria e Negócios</title>
 	<?php include "heads.php"; ?>
 </head>
 

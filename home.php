@@ -7,6 +7,7 @@ require "config/url.class.php";
 <html lang="pt-br">
 
 <head>
+	<title>Somos VL - Consultoria e Negócios</title>
 	<?php include "heads.php"; ?>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./assets/css/swiper.css">
