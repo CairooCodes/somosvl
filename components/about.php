@@ -17,7 +17,7 @@
       </div>
     </div>
   </div>
-  <div class="max-w-screen-md mx-auto p-5">
+  <!-- <div class="max-w-screen-md mx-auto p-5">
     <h1 class="lg:text-4xl text-3xl text-center mb-4"><span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color2 to-color2">PERGUNTAS E RESPOSTAS</span></h1>
     <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-transparent" data-inactive-classes="text-gray-500">
       <h3 id="accordion-flush-heading-1">
@@ -78,8 +78,8 @@
         <div class="py-5 border-b border-gray-200">
           Não há cobrança para liberação do cartão consignado.
         </div>
-      </div>
-      <h3 id="accordion-flush-heading-5">
+      </div> -->
+      <!-- <h3 id="accordion-flush-heading-5">
         <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
           <span>Qual é o valor máximo da parcela do Empréstimo Consignado?
           </span>
@@ -168,8 +168,8 @@
         <div class="py-5 border-b border-gray-200">
           Em hipótese alguma o banco entrará em contato solicitando a devolução do valor liberado ou o pagamento de boleto em nome de terceiros. Caso receba este tipo de solicitação, não realize a devolução ou o pagamento do boleto e entre em contato conosco para confirmar se as informações são verdadeiras através de nossa Central de Atendimento.
         </div>
-      </div>
-      <h3 id="accordion-flush-heading-11">
+      </div> -->
+      <!-- <h3 id="accordion-flush-heading-11">
         <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-11" aria-expanded="false" aria-controls="accordion-flush-body-11">
           <span>
             Quem pode adiantar o saque-aniversário?
@@ -241,7 +241,7 @@
         <div class="py-5 border-b border-gray-200">
           Sim, é possível liquidar o contrato e desbloquear o saldo do FGTS a qualquer momento, desde que sejam pagos as parcelas adiantadas direto com o banco contratante
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>
