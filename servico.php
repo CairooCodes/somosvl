@@ -69,7 +69,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 								</h3>
 								<div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
 									<div class="py-5 border-b border-gray-200">
-										SEM RESPOSTA.
+									Todo trabalhador brasileiro que possui saldo disponível em contas do FGTS tem direito a antecipar o fundo de garantia, desde que preencha os requisitos necessários.
 
 									</div>
 								</div>
