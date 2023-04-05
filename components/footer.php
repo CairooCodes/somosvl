@@ -17,6 +17,9 @@
             <li class="mb-4">
               <a href="#" class="hover:underline">Quem Somos</a>
             </li>
+            <li class="mb-4">
+              <a href="politica-de-privacidade" class="hover:underline">Política de Privacidade</a>
+            </li>
           </ul>
         </div>
         <div>
