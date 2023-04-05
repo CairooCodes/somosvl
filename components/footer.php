@@ -3,7 +3,9 @@
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4">
       <div>
         <div class="justify-center flex">
+          <a href="<?php echo $URI->base('home') ?>">
           <img src="<?php echo $URI->base('/assets/img/logo_white.png') ?>">
+          </a>
         </div>
         </div>
         <div>
@@ -12,13 +14,13 @@
           </h3>
           <ul class="text-white">
             <li class="mb-4">
-              <a href="#" class="hover:underline">Serviços</a>
+              <a href="<?php echo $URI->base('home.php#servicos') ?>" class="hover:underline">Serviços</a>
             </li>
             <li class="mb-4">
-              <a href="#" class="hover:underline">Quem Somos</a>
+              <a href="<?php echo $URI->base('quem-somos.php') ?>" class="hover:underline">Quem Somos</a>
             </li>
             <li class="mb-4">
-              <a href="politica-de-privacidade" class="hover:underline">Política de Privacidade</a>
+              <a href="<?php echo $URI->base('politica-de-privacidade') ?>" class="hover:underline">Política de Privacidade</a>
             </li>
           </ul>
         </div>

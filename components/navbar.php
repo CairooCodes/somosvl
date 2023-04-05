@@ -9,7 +9,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 <header class="w-full shadow">
   <nav class="border-gray-200 py-2.5 bg-white">
     <div class="flex flex-wrap items-center justify-between max-w-6xl px-4 mx-auto">
-      <a href="<?php echo $URI->base("/"); ?>">
+      <a href="<?php echo $URI->base("home"); ?>">
         <img src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo" alt="<?php echo $title; ?>" />
       </a>
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1">
@@ -44,16 +44,16 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       <div class="flex items-center lg:order-2">
         <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">HOME</a>
+            <a href="<?php echo $URI->base("home"); ?>" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">HOME</a>
           </li>
           <li>
             <a href="#servicos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">SERVIÇOS</a>
           </li>
           <li>
-            <a href="quem-somos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">QUEM SOMOS</a>
+            <a href="<?php echo $URI->base("quem-somos"); ?>" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">QUEM SOMOS</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">CONTATO</a>
+            <a href="https://wa.me/558008884004" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">CONTATO</a>
           </li>
         </ul>
         <?php if ($btn_name != null) { ?>
@@ -191,18 +191,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
           <a href="quem-somos" class="block py-2 pl-3 pr-4 text-color2 rounded lg:p-0" aria-current="page">QUEM SOMOS</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-color2 rounded lg:p-0" aria-current="page">CONTATO</a>
+          <a href="https://wa.me/558008884004" class="block py-2 pl-3 pr-4 text-color2 rounded lg:p-0" aria-current="page">CONTATO</a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
 
-<?php if ($btn_floating_type == 1) { ?>
-  <div class="btn_floating">
-    <img class="lg:h-40 lg:w-40 h-32 w-32" src="<?php echo $URI->base("/assets/img/botao_flutuante.png"); ?>" alt="Mascote ITTNET" />
-  </div>
-<?php } ?>
 <?php if ($btn_floating_type == 2) { ?>
   <a href="https://wa.me/558008884004">
     <div class="btn_whats">
