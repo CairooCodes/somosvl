@@ -10,7 +10,7 @@
         <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color2 to-color2">Há 12 anos atuando no mercado de correspondente bancário</span>
       </h1>
       <h2 class="mb-4 lg:text-xl text-justify">
-        trabalhamos garantindo <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color2 to-color2">soluções inovadoras </span> que atendem as necessidades dos nossos clientes em todos os segmentos em que atuamosde forma rápida, segura e remota, já que atuamos em todo território nacional.
+        trabalhamos garantindo <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color2 to-color2">soluções inovadoras </span> que atendem as necessidades dos nossos clientes em todos os segmentos em que atuamosde forma rápida, segura e remota, já que atuamos em todo território nacional.
       </h2>
       <div class="flex justify-center">
         <a href="quem-somos" class="text-white bg-color2 focus:ring-4 rounded-md font-bold text-lg px-5 py-2 text-center">Saiba mais</a>
@@ -47,7 +47,6 @@
       <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
         <div class="py-5 border-b border-gray-200">
           Aposentados e pensionistas do INSS e servidores públicos podem contratar o cartão de crédito consignado. É necessário apresentar os documentos pessoais e comprovante de renda para a análise de crédito.
-
         </div>
       </div>
       <h3 id="accordion-flush-heading-3">
@@ -62,7 +61,6 @@
       <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
         <div class="py-5 border-b border-gray-200">
           O cartão consignado pode ser usado em estabelecimentos conveniados ou em estabelecimentos que aceitem cartões de crédito em geral.
-
         </div>
       </div>
       <h3 id="accordion-flush-heading-4">
@@ -76,7 +74,7 @@
       </h3>
       <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
         <div class="py-5 border-b border-gray-200">
-          Não há cobrança para liberação do cartão consignado.
+          Não há cobrança para liberação do cartão consignado.
         </div>
       </div> -->
       <!-- <h3 id="accordion-flush-heading-5">
@@ -96,7 +94,6 @@
       <h3 id="accordion-flush-heading-6">
         <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-5">
           <span>Quem pode contratar o empréstimo consignado?
-
           </span>
           <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -106,14 +103,12 @@
       <div id="accordion-flush-body-6" class="hidden" aria-labelledby="accordion-flush-heading-6">
         <div class="py-5 border-b border-gray-200">
           Aposentados, pensionistas do INSS e servidores públicos podem contratar o Empréstimo Consignado. É necessário apresentar os documentos pessoais e comprovante de renda para a análise de crédito.
-
         </div>
       </div>
       <h3 id="accordion-flush-heading-7">
         <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-7" aria-expanded="false" aria-controls="accordion-flush-body-7">
           <span>
             Qual a taxa de juros do Empréstimo Consignado?
-
           </span>
           <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -123,13 +118,11 @@
       <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
         <div class="py-5 border-b border-gray-200">
           As taxas de juros do Empréstimo Consignado são fixas e variam de acordo com a instituição financeira que oferece o empréstimo.
-
         </div>
       </div>
       <h3 id="accordion-flush-heading-8">
         <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
           <span>O que é a portabilidade de Crédito?
-
           </span>
           <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -166,7 +159,7 @@
       </h3>
       <div id="accordion-flush-body-10" class="hidden" aria-labelledby="accordion-flush-heading-10">
         <div class="py-5 border-b border-gray-200">
-          Em hipótese alguma o banco entrará em contato solicitando a devolução do valor liberado ou o pagamento de boleto em nome de terceiros. Caso receba este tipo de solicitação, não realize a devolução ou o pagamento do boleto e entre em contato conosco para confirmar se as informações são verdadeiras através de nossa Central de Atendimento.
+          Em hipótese alguma o banco entrará em contato solicitando a devolução do valor liberado ou o pagamento de boleto em nome de terceiros. Caso receba este tipo de solicitação, não realize a devolução ou o pagamento do boleto e entre em contato conosco para confirmar se as informações são verdadeiras através de nossa Central de Atendimento.
         </div>
       </div> -->
       <!-- <h3 id="accordion-flush-heading-11">
@@ -225,7 +218,6 @@
       <div id="accordion-flush-body-15" class="hidden" aria-labelledby="accordion-flush-heading-15">
         <div class="py-5 border-b border-gray-200">
           Se após a contratação do empréstimo com garantia no FGTS você mudar de ideia, pode solicitar o cancelamento dentro do prazo de 7 dias corridos. Para isso, basta entrar em contato com a nossa Central de Atendimento, por meio de um dos nossos canais de comunicação. Infelizmente, não é possível solicitar o cancelamento após esse prazo de 7 dias ter sido ultrapassado.
-
         </div>
       </div>
       <h3 id="accordion-flush-heading-16">
@@ -239,7 +231,7 @@
       </h3>
       <div id="accordion-flush-body-16" class="hidden" aria-labelledby="accordion-flush-heading-16">
         <div class="py-5 border-b border-gray-200">
-          Sim, é possível liquidar o contrato e desbloquear o saldo do FGTS a qualquer momento, desde que sejam pagos as parcelas adiantadas direto com o banco contratante
+          Sim, é possível liquidar o contrato e desbloquear o saldo do FGTS a qualquer momento, desde que sejam pagos as parcelas adiantadas direto com o banco contratante
         </div>
       </div> -->
     </div>
