@@ -29,7 +29,7 @@ session_start();
   <div class="pt-10 md:pt-0 md:px-0 px-4 relative min-h-screen sm:flex sm:flex-col justify-center bg-transparent rounded-3xl">
     <div class="flex-col flex self-center lg:px-14 sm:max-w-4xl xl:max-w-md z-10">
       <div class="flex justify-center text-gray-300">
-        <img src="./assets/img/icon.jpg" class="w-32">
+        <img src="../assets/img/logo.png" class="w-32">
       </div>
     </div>
     <div class="flex justify-center self-center z-10 shadow-2xl">

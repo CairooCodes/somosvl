@@ -27,7 +27,7 @@ session_start();
 
 try {
   $sql = "INSERT INTO users (name, email, password, img) VALUES (?, ?, ?, ?)";
-  $stmt = $pdo->prepare($sql);
+  $stmt = $DB_con->prepare($sql);
   $img_lob = $img . PDO::PARAM_LOB;
   $resultado = $stmt->execute([$name, $email, $password_cript, $img_lob]);
 } catch (PDOException) {
@@ -38,7 +38,7 @@ try {
 
 if ($resultado) {
   $_SESSION['success_message'] = "Usuário cadastrado com sucesso!";
-  header("Location: ../login.php"); // Redireciona para a página de login
+  header("Location: ./admin/login.php"); // Redireciona para a página de login
   exit();
 } else {
   $_SESSION['error_message'] = "Erro!";
