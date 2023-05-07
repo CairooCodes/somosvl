@@ -38,7 +38,7 @@ try {
 
 if ($resultado) {
   $_SESSION['success_message'] = "Usuário cadastrado com sucesso!";
-  header("Location: ./admin/login.php"); // Redireciona para a página de login
+  header("Location: ../login.php"); // Redireciona para a página de login
   exit();
 } else {
   $_SESSION['error_message'] = "Erro!";

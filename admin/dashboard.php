@@ -17,7 +17,7 @@ $user = $stmt->fetch();
 
 
 $products = getAllProducts();
-// $categories = getCategories();
+$categories = getCategories();
 $page = 'dash';
 ?>
 <!DOCTYPE html>

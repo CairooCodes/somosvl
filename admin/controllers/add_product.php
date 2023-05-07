@@ -2,7 +2,9 @@
 require "../../db_config.php";
 
 $name = $_POST['name'];
+$price = $_POST['price'];
 $categorie_id = $_POST['categorie_id'];
+$stars = $_POST['stars'];
 $link = $_POST['link'];
 $description = $_POST['description'];
 
@@ -17,8 +19,8 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 
 $new_description = $dom->saveHTML();
 
-$sql = "INSERT INTO products (name, img, categorie_id, link,description) VALUES (?,?,?,?,?)";
+$sql = "INSERT INTO products (name, price, img, categorie_id, stars, link,description) VALUES (?,?,?,?,?,?,?)";
 $stmt = $DB_con->prepare($sql);
 $img_lob = $img . PDO::PARAM_LOB;
-$stmt->execute([$name, $img_lob, $categorie_id, $link, $description]);
+$stmt->execute([$name, $price, $img_lob, $categorie_id, $stars, $link, $description]);
 header('Location: ../dashboard.php');
