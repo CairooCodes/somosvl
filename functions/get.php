@@ -31,11 +31,3 @@ function getProducts3()
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-
-function getCategories()
-{
-  global $DB_con;
-  $stmt = $DB_con->prepare("SELECT * FROM categories order by id desc");
-  $stmt->execute();
-  return $stmt->fetchAll(PDO::FETCH_ASSOC);
-}

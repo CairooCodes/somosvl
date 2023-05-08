@@ -12,7 +12,12 @@
             <h3 class="mb-4 text-xl font-black py-2"><?php echo $name; ?></h3>
           </div>
           <div>
-            <img class="rounded-md md:h-52 h-32" src="./admin/uploads/products/<?php echo $img; ?>">
+          <?php
+							if (!empty($products['img'])) {
+								$img = base64_encode($products['img']);
+								echo "<img class='rounded-md md:h-52 h-32' src='data:image/jpeg;base64," . $img . "'>";
+							}
+							?>
           </div>
           <div class="product_info">
             <?php echo $info ?>

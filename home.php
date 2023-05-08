@@ -2,6 +2,10 @@
 require "db_config.php";
 require "config/helper.php";
 require "config/url.class.php";
+require "./functions/get.php";
+$products = getProducts();
+// $products2 = getProducts2();
+// $products3 = getProducts3();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

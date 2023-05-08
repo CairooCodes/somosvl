@@ -77,19 +77,6 @@ function getProduct($id)
                 <label class="block mb-2 text-sm font-medium text-gray-900">Name</label>
                 <input name="name" type="text" value="<?php echo $product['name']; ?>" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do Produto" required="">
               </div>
-              <div class="col-span-6 sm:col-span-3">
-                <label for="categoria" class="block mb-2 text-sm font-medium text-gray-900">Categoria</label>
-                <select class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" name="categorie_id">
-                  <?php foreach ($categories as $categorie) {
-                    if ($categorie['id'] == $product['categorie_id']) { ?>
-                      <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?> (selecionado)</option>
-                  <?php }
-                  } ?>
-                  <?php foreach ($categories as $categorie) { ?>
-                    <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?></option>
-                  <?php } ?>
-                </select>
-              </div>
               <input id="id" name="id" type="hidden" value="<?php echo $product['id']; ?>">
               <div class="col-span-6 sm:col-span-3">
                 <label for="phone-number" class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>

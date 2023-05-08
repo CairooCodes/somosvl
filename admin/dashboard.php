@@ -17,7 +17,7 @@ $user = $stmt->fetch();
 
 
 $products = getAllProducts();
-$categories = getCategories();
+
 $page = 'dash';
 ?>
 <!DOCTYPE html>
@@ -93,6 +93,9 @@ $page = 'dash';
                 Nome
               </th>
               <th scope="col" class="px-6 py-3">
+                Preço
+              </th>
+              <th scope="col" class="px-6 py-3">
                 Status
               </th>
               <th scope="col" class="px-6 py-3">
@@ -104,6 +107,12 @@ $page = 'dash';
             <?php foreach ($products as $products) { ?>
               <tr class="bg-white border-b">
                 <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
+                  <?php
+                  if (!empty($products['img'])) {
+                    $img = base64_encode($products['img']);
+                    echo "<img class='w-10' src='data:image/jpeg;base64," . $img . "'>";
+                  }
+                  ?>
                   <div class="pl-3">
                     <div class="text-base font-semibold"><?php echo $products['name']; ?></div>
                   </div>

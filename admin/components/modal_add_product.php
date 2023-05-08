@@ -21,15 +21,6 @@
             <input type="text" name="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Nome do Produto" required="">
           </div>
           <div class="col-span-6 sm:col-span-3">
-            <label for="categoria" class="block mb-2 text-md font-medium text-gray-900">Categoria</label>
-            <a href="categorias.php" class="mb-2 text-sm font-medium text-gray-700"><i class="bi bi-plus-circle"></i> Adicionar Categoria</a>
-            <select class="uppercase shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" name="categorie_id">
-              <?php foreach ($categories as $categorie) { ?>
-                <option value="<?php echo $categorie['id']; ?>"><?php echo $categorie['name']; ?></option>
-              <?php } ?>
-            </select>
-          </div>
-          <div class="col-span-6 sm:col-span-3">
             <label class="block mb-2 text-sm font-medium text-gray-900">Imagem</label>
             <input type="file" id="img" name="img">
           </div>
