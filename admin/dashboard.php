@@ -104,12 +104,6 @@ $page = 'dash';
             <?php foreach ($products as $products) { ?>
               <tr class="bg-white border-b">
                 <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap">
-                  <?php
-                  if (!empty($products['img'])) {
-                    $img = base64_encode($products['img']);
-                    echo "<img class='w-10' src='data:image/jpeg;base64," . $img . "'>";
-                  }
-                  ?>
                   <div class="pl-3">
                     <div class="text-base font-semibold"><?php echo $products['name']; ?></div>
                   </div>
@@ -155,7 +149,7 @@ $page = 'dash';
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
   <script>
     tinymce.init({
-      selector: '#description',
+      selector: '#info',
       plugins: 'print preview powerpaste casechange importcss tinydrive searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker imagetools textpattern noneditable help formatpainter permanentpen pageembed charmap tinycomments mentions quickbars linkchecker emoticons advtable export',
       toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment'
     });

@@ -1,20 +1,16 @@
 <?php
-function updateProduct($id, $name, $categorie_id, $img, $description)
+function updateProduct($id, $name, $img, $info)
 {
   global $DB_con;
   if ($img) {
-    $img_lob = $img . PDO::PARAM_LOB;
-    $stmt = $DB_con->prepare("UPDATE products SET name = :name, categorie_id = :categorie_id, img=:img, description=:description WHERE id = :id");
+    $stmt = $DB_con->prepare("UPDATE products SET name = :name, img=:img, info=:info WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':categorie_id', $categorie_id);
-    $stmt->bindParam(':description', $description);
-    $stmt->bindValue(':img', $img_lob, PDO::PARAM_LOB);
+    $stmt->bindParam(':info', $info);
     $stmt->bindParam(':id', $id);
   } else {
-    $stmt = $DB_con->prepare("UPDATE products SET name = :name, categorie_id = :categorie_id, description=:description WHERE id = :id");
+    $stmt = $DB_con->prepare("UPDATE products SET name = :name, categorie_id = :categorie_id, info=:info WHERE id = :id");
     $stmt->bindParam(':name', $name);
-    $stmt->bindParam(':categorie_id', $categorie_id);
-    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':info', $info);
     $stmt->bindParam(':id', $id);
 
   }

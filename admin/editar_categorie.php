@@ -91,5 +91,4 @@ function getCategorie($id)
         </div>
     </div>
 </body>
-
 </html>
