@@ -64,13 +64,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         <div class="nav_icons px-4 flex space-x-2">
           <?php if ($icon1 != '') {
             if ($icon1_type == 1) { ?>
-              <a class="hidden lg:block" href="<?php echo $link_icon1 ?>">
+              <a class="hidden lg:block" href="<?php echo $icon1_link ?>">
                 <img src="<?php echo $URI->base("/admin/uploads/icons/$icon1"); ?>" class="" alt="<?php echo $icon1 ?>" />
               </a>
             <?php
             }
             if ($icon1_type == 2) { ?>
-              <a class="bg-color1 p-1.5 rounded-full w-10 h-10 text-center text-white text-lg hidden lg:block" href="<?php echo $link_icon1 ?>">
+              <a class="bg-color1 p-1.5 rounded-full w-10 h-10 text-center text-white text-lg hidden lg:block" href="<?php echo $icon1_link ?>">
                 <?php echo $icon1 ?>
               </a>
           <?php
@@ -80,13 +80,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
           <?php if ($icon2 != '') {
             if ($icon2_type == 1) { ?>
-              <a class="hidden lg:block" href="<?php echo $link_icon2 ?>">
+              <a class="hidden lg:block" href="<?php echo $icon2_link ?>">
                 <img src="<?php echo $URI->base("/admin/uploads/icons/$icon2"); ?>" class="" alt="<?php echo $icon2 ?>" />
               </a>
             <?php
             }
             if ($icon2_type == 2) { ?>
-              <a class="bg-color1 p-1.5 rounded-full w-10 h-10 text-center text-white text-lg hidden lg:block" href="<?php echo $link_icon2 ?>">
+              <a class="bg-color1 p-1.5 rounded-full w-10 h-10 text-center text-white text-lg hidden lg:block" href="<?php echo $icon2_link ?>">
                 <?php echo $icon2 ?>
               </a>
           <?php
@@ -96,13 +96,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
           <?php if ($icon3 != '') {
             if ($icon3_type == 1) { ?>
-              <a class="hidden lg:block" href="<?php echo $link_icon3 ?>">
+              <a class="hidden lg:block" href="<?php echo $icon3_link ?>">
                 <img src="<?php echo $URI->base("/admin/uploads/icons/$icon3"); ?>" class="" alt="<?php echo $icon3 ?>" />
               </a>
             <?php
             }
             if ($icon3_type == 2) { ?>
-              <a class="bg-color1 p-1.5 rounded-full w-10 h-10 text-center text-white text-lg hidden lg:block" href="<?php echo $link_icon3 ?>">
+              <a class="bg-color1 p-1.5 rounded-full w-10 h-10 text-center text-white text-lg hidden lg:block" href="<?php echo $icon3_link ?>">
                 <?php echo $icon3 ?>
               </a>
           <?php
