@@ -17,6 +17,37 @@
       </div>
     </div>
   </div>
+  <div class="pt-10 form">
+		<div class="lg:w-2/3 pt-20 px-4 pb-8 mx-auto lg:pb-16">
+			<div class="swiper-slide shadow-inner bg-white bg-opacity-70 shadow-md rounded-xl border border-gray-300">
+				<div class="max-w-screen-xl px-4 pt-8 mx-auto mb-3 text-center">
+					<h1 class="mt-5 text-gray-600 font-semibold lg:text-3xl text-xl">Nossas promoções podem chegar primeiro para você</h1>
+				</div>
+				<form action="./admin/controllers/add_lead.php" method="post">
+					<div class="lg:flex justify-center m-5">
+						<div>
+							<input class="lg:w-72 w-full mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="text" name="name" id="name" placeholder="Nome">
+						</div>
+						<div>
+							<input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="email" name="email" id="email" placeholder="Email">
+						</div>
+						<input type="hidden" value="1" name="type">
+						<div>
+							<button class="lg:mt-0 mt-2 flex justify-center items-center lg:w-14 w-full lg:h-14 h-12 bg-green-400 rounded-lg lg:rounded-full">
+								<svg class="hidden lg:block" width="30" height="30" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M25 11.5L0 0L4.5 11.5L0 22.5L25 11.5Z" fill="white" />
+								</svg>
+								<span class="lg:hidden" type="submit">Enviar</span>
+							</button>
+						</div>
+					</div>
+				</form>
+				<div class="font-sm text-center mb-5">
+					<small class="text-gray-600">Concordo em receber mensagens e compartilhar meus dados pessoais com a SomosVL. Consulte nossas <a href="#" class="text-blue-800">Políticas de Privacidade</a></small>
+				</div>
+			</div>
+		</div>
+  </div>
   <!-- <div class="max-w-screen-md mx-auto p-5">
     <h1 class="lg:text-4xl text-3xl text-center mb-4"><span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color2 to-color2">PERGUNTAS E RESPOSTAS</span></h1>
     <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-transparent" data-inactive-classes="text-gray-500">

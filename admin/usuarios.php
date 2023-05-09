@@ -10,13 +10,13 @@ if (!isset($_SESSION['id'])) {
 
 $user_id = $_SESSION['id'] ?? null;
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
-$stmt = $DB_con->prepare($sql);
+$stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 
 // Consulta SQL
 $sql = "SELECT * FROM users";
-$stmt = $DB_con->prepare($sql);
+$stmt = $pdo->prepare($sql);
 $stmt->execute();
 $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $page = 'users';

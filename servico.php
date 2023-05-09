@@ -9,7 +9,7 @@ $url = explode("/", $_SERVER['REQUEST_URI']);
 $get_url = $url[2];
 $get_url_2 = "";
 
-$stmt = $DB_con->prepare("SELECT * FROM products");
+$stmt = $pdo->prepare("SELECT * FROM products");
 $stmt->execute();
 if ($stmt->rowCount() > 0) {
 	while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -22,7 +22,7 @@ if ($stmt->rowCount() > 0) {
 	}
 }
 
-$stmt = $DB_con->prepare("SELECT * FROM products where name='$get_url_2'");
+$stmt = $pdo->prepare("SELECT * FROM products where name='$get_url_2'");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	extract($row);

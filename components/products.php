@@ -1,7 +1,7 @@
 <section id="servicos" class="swiper swiper_products products max-w-screen-xl mx-auto md:pt-10 p-4">
   <h1 class="lg:text-4xl text-3xl text-center mb-4"><span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-color2 to-color2">Serviços</span></h1>
   <div class="swiper-wrapper">
-    <?php $stmt = $DB_con->prepare("SELECT * FROM products order by id desc");
+    <?php $stmt = $pdo->prepare("SELECT * FROM products order by id desc");
     $stmt->execute();
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       extract($row);

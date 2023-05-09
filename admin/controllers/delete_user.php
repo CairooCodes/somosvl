@@ -17,8 +17,8 @@ if (!empty($_GET['id'])) {
 // Função para excluir um cliente pelo ID
 function deleteProduct($id)
 {
-  global $DB_con;
-  $stmt = $DB_con->prepare("DELETE FROM products WHERE id = :id");
+  global $pdo;
+  $stmt = $pdo->prepare("DELETE FROM products WHERE id = :id");
   $stmt->bindParam(':id', $id);
   $stmt->execute();
 }

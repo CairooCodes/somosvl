@@ -1,5 +1,5 @@
 <?php
-$stmt = $DB_con->prepare("SELECT * FROM navbars");
+$stmt = $pdo->prepare("SELECT * FROM navbars");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   extract($row);

@@ -27,7 +27,7 @@ session_start();
 
 try {
   $sql = "INSERT INTO users (name, email, password, img) VALUES (?, ?, ?, ?)";
-  $stmt = $DB_con->prepare($sql);
+  $stmt = $pdo->prepare($sql);
   $img_lob = $img . PDO::PARAM_LOB;
   $resultado = $stmt->execute([$name, $email, $password_cript, $img_lob]);
 } catch (PDOException) {

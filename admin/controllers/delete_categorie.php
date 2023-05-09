@@ -15,8 +15,8 @@ if (!empty($_GET['id'])) {
 
   function deleteCategorie($id)
   {
-    global $DB_con;
-    $stmt = $DB_con->prepare("DELETE FROM categories  WHERE id = :id");
+    global $pdo;
+    $stmt = $pdo->prepare("DELETE FROM categories  WHERE id = :id");
     $stmt->bindParam(':id', $id);
     $stmt->execute();
   }

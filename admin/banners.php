@@ -10,7 +10,7 @@ if (!isset($_SESSION['id'])) {
 
 $user_id = $_SESSION['id'] ?? null;
 $sql = "SELECT name, email, img FROM users WHERE id = ?";
-$stmt = $DB_con->prepare($sql);
+$stmt = $pdo->prepare($sql);
 $stmt->execute([$user_id]);
 $user = $stmt->fetch();
 $page = 'banners';

@@ -3,7 +3,7 @@ $URI = new URI();
 $url = explode("/", $_SERVER['REQUEST_URI']);
 $url_site = $url[1];
 
-$stmt = $DB_con->prepare("SELECT * FROM heads");
+$stmt = $pdo->prepare("SELECT * FROM heads");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	extract($row);

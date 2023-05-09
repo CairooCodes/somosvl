@@ -17,7 +17,7 @@ if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 $new_info = $dom->saveHTML();
 
 $sql = "INSERT INTO products (name, link, img, info) VALUES (?,?,?,?)";
-$stmt = $DB_con->prepare($sql);
+$stmt = $pdo->prepare($sql);
 $img_lob = $img . PDO::PARAM_LOB;
 $stmt->execute([$name, $link, $img_lob, $info]);
 header('Location: ../dashboard.php');

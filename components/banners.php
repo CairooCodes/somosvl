@@ -1,7 +1,7 @@
 <section class="swiper swiper_banners">
   <div class="swiper-wrapper">
     <?php
-    $stmt = $DB_con->prepare("SELECT * FROM banners");
+    $stmt = $pdo->prepare("SELECT * FROM banners");
     $stmt->execute();
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       extract($row);
