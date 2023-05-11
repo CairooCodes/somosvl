@@ -3,6 +3,7 @@ require "db_config.php";
 require "config/helper.php";
 require "config/url.class.php";
 require "./functions/get.php";
+$banners = getBanners();
 // $products = getProducts();
 
 ?>
@@ -27,11 +28,15 @@ require "./functions/get.php";
 	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 	<script>
 		var swiper = new Swiper(".swiper_banners", {
-			slidesPerView: 1,
-			centeredSlides: true,
-			spaceBetween: 10,
 			loop: true,
-			freeMode: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
 		});
 	</script>
 	<script>
