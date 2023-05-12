@@ -93,12 +93,6 @@ $page = 'dash';
                 Nome
               </th>
               <th scope="col" class="px-6 py-3">
-                Preço
-              </th>
-              <th scope="col" class="px-6 py-3">
-                Status
-              </th>
-              <th scope="col" class="px-6 py-3">
                 Ação
               </th>
             </tr>
@@ -117,11 +111,6 @@ $page = 'dash';
                     <div class="text-base font-semibold"><?php echo $products['name']; ?></div>
                   </div>
                 </th>
-                <td class="px-6 py-4">
-                  <div class="flex items-center">
-                    <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> Ativo
-                  </div>
-                </td>
                 <td class="px-6 py-4">
                   <a href="./editar_produto.php?id=<?php echo $products['id']; ?>" type="button" data-modal-target="editUserModal" data-modal-show="editUserModal" class="font-medium text-blue-600 hover:underline">Editar</a>
                   <a href="./controllers/delete_user.php?id=<?php echo $products['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>

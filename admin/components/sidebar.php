@@ -19,7 +19,7 @@
 
     <ul class="space-y-2 tracking-wide mt-8">
       <li>
-        <a href="dashboard.php" aria-label="dashboard" class="relative px-4 py-3 flex items-center space-x-4 rounded-xl <?php if ($page=='dash') { echo 'bg-color1 text-white';} ?>">
+        <a href="dashboard.php" aria-label="dashboard" class="relative px-4 py-3 flex items-center space-x-4 rounded-xl">
           <svg class="-ml-1 h-6 w-6" viewBox="0 0 24 24" fill="none">
             <path d="M6 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8ZM6 15a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1Z" class="fill-current text-cyan-400 dark:fill-slate-600"></path>
             <path d="M13 8a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2V8Z" class="fill-current text-cyan-200"></path>
@@ -29,19 +29,19 @@
         </a>
       </li>
       <li>
-        <a href="banners.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group <?php if ($page=='banners') { echo 'bg-color1 text-white';} ?>">
+        <a href="banners.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group">
           <i class="bi bi-images"></i>
           <span class="group-hover:text-gray-700">Banners</span>
         </a>
       </li>
       <li>
-        <a href="leads.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group <?php if ($page=='leads') { echo 'bg-color1 text-white';} ?>">
+        <a href="leads.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group">
           <i class="bi bi-list"></i>
           <span class="group-hover:text-gray-700">Leads</span>
         </a>
       </li>
       <li>
-        <a href="usuarios.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group <?php if ($page=='users') { echo 'bg-color1 text-white';} ?>">
+        <a href="usuarios.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group">
           <i class="bi bi-people-fill"></i>
           <span class="group-hover:text-gray-700">Usuários</span>
         </a>

@@ -27,3 +27,7 @@
 @media (min-width: 768px) {
   
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #DEBAD6 !important;
+}

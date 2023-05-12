@@ -6,18 +6,18 @@
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       extract($row);
     ?>
-      <div class="swiper-slide">
+      <div class="swiper-slide bg-white">
         <div class="<?php echo $bg; ?> max-w-lg p-6 mx-auto rounded-md shadow_csc">
           <div class="rounded-2xl">
-            <h3 class="mb-4 text-xl font-black py-2"><?php echo $name; ?></h3>
+            <h3 class="mb-4 text-xl text-black font-black py-2"><?php echo $name; ?></h3>
           </div>
           <div>
-          <?php
-							if (!empty($products['img'])) {
-								$img = base64_encode($products['img']);
-								echo "<img class='rounded-md md:h-52 h-32' src='data:image/jpeg;base64," . $img . "'>";
-							}
-							?>
+            <?php
+            if (!empty($img)) {
+              $img = base64_encode($img);
+              echo "<img class='rounded-md md:h-52 h-32' src='data:image/jpeg;base64," . $img . "'>";
+            }
+            ?>
           </div>
           <div class="product_info">
             <?php echo $info ?>

@@ -97,7 +97,7 @@ $page = 'banners';
                 <td class="pl-5 text-gray-900 font-semibold"><?php
                   if (!empty($banners['img'])) {
                       $img = base64_encode($banners['img']);
-                      echo "<img class='w-full' src='data:image/jpeg;base64," . $img . "'>";
+                      echo "<img class='w-52' src='data:image/jpeg;base64," . $img . "'>";
                   }
                 ?>
                 </td>

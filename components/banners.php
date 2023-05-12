@@ -1,4 +1,4 @@
-<section class="swiper swiper_banners relative mt-20">
+<section class="swiper swiper_banners">
   <div class="swiper-wrapper">
     <?php
      foreach ($banners as $banners){
@@ -15,7 +15,7 @@
     }
     ?>
   </div>
-  <div class="swiper-button-next text-white"></div>
-  <div class="swiper-button-prev text-white"></div>
+  <div class="swiper-button-next text-color1"></div>
+  <div class="swiper-button-prev text-color1"></div>
   <div class="swiper-pagination"></div>
 </section>

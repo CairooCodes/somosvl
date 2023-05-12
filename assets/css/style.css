@@ -39,10 +39,7 @@ header .logo {
 }
 
 h2,
-h1,
-.products .swiper-slide h3,
-.products .product_info span,
-.products .product_info {
+h1 {
   color: var(--text-color) !important;
 }
 
