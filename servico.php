@@ -41,11 +41,16 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 	<?php include "components/navbar.php"; ?>
 	<div class="pt-2">
 		<div class="flex justify-center">
-			<img class="rounded-md" src="<?php echo $URI->base("/admin/uploads/products/$img"); ?>">
+			<?php
+			if (!empty($img)) {
+				$img = base64_encode($img);
+				echo "<img class='rounded-md' src='data:image/jpeg;base64," . $img . "'>";
+			}
+			?>
 		</div>
 		<div class="pt-2">
 			<div class="m-5">
-			<?php echo $info ?>
+				<?php echo $info ?>
 			</div>
 			<!-- FAQ SAQUE-ANIVERSÁRIO FGTS CONSIGINADO -->
 			<?php
@@ -69,7 +74,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 								</h3>
 								<div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
 									<div class="py-5 border-b border-gray-200">
-									Todo trabalhador brasileiro que possui saldo disponível em contas do FGTS tem direito a antecipar o fundo de garantia, desde que preencha os requisitos necessários.
+										Todo trabalhador brasileiro que possui saldo disponível em contas do FGTS tem direito a antecipar o fundo de garantia, desde que preencha os requisitos necessários.
 
 									</div>
 								</div>
@@ -260,7 +265,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 								<div id="accordion-flush-body-11" class="hidden" aria-labelledby="accordion-flush-heading-11">
 									<div class="py-5 border-b border-gray-200">
 										As taxas do cartão consignado variam de acordo com a instituição financeira que oferece o serviço, mas geralmente são menores do que as cobradas nos cartões de crédito convencionais.
-										
+
 									</div>
 								</div>
 
