@@ -91,7 +91,7 @@ $page = 'leads';
             <tr>
               <th scope="col" class="px-6 py-3">ID</th>
               <th scope="col" class="px-6 py-3">Nome</th>
-              <th scope="col" class="px-6 py-3">E-mail</th>
+              <th scope="col" class="px-6 py-3">WhatsApp</th>
             </tr>
           </thead>
           <tbody>
@@ -99,7 +99,7 @@ $page = 'leads';
               <tr class="bg-white border-b">
                 <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['id']; ?></td>
                 <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['name']; ?></td>
-                <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['email']; ?></td>
+                <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['whatsapp']; ?></td>
                 <td class="px-6 py-4">
                   <a href="./controllers/delete_lead.php?id=<?php echo $lead['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>

@@ -1,11 +1,11 @@
 <?php
 require "../../db_config.php";
 $name = $_POST['name'];
-$email = $_POST['email'];
+$whatsapp = $_POST['whatsapp'];
 $type = $_POST['type'];
-$sql = "INSERT INTO leads (name, email, type) VALUES (?,?,?)";
+$sql = "INSERT INTO leads (name, whatsapp, type) VALUES (?,?,?)";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$name, $email, $type]);
+$stmt->execute([$name, $whatsapp, $type]);
 
 echo ("
 <script>
