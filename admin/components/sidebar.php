@@ -10,7 +10,7 @@
       <?php
       if (!empty($user['img'])) {
         $img = base64_encode($user['img']);
-        echo "<img src='data:image/jpeg;base64," . $img . "' onerror='this.src='./assets/img/semperfil.png'' class='w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28'>";
+        echo "<img src='data:image/jpeg;base64," . $img . "' onerror='this.src='./assets/img/semperfil.png'' class='w-10 h-10 m-auto rounded-full object-cover lg:w-16 lg:h-16'>";
       }
       ?>
       <h5 class="hidden mt-4 text-xl font-semibold text-gray-800 lg:block"><?php echo $user['name']; ?></h5>
@@ -38,6 +38,12 @@
         <a href="leads.php" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group">
           <i class="bi bi-list"></i>
           <span class="group-hover:text-gray-700">Leads</span>
+        </a>
+      </li>
+      <li>
+        <a href="quem_somos.php?id=1" class="px-4 py-3 flex items-center space-x-4 rounded-md text-gray-800 group">
+          <i class="bi bi-briefcase"></i>
+          <span class="group-hover:text-gray-700">Quem somos</span>
         </a>
       </li>
       <li>
