@@ -10,7 +10,7 @@
         </div>
         <div>
           <h3 class="mb-6 text-sm font-semibold text-white uppercase">
-            WWW.VLCONSULT.COM.BR
+            WWW.SOMOSVL.COM.BR
           </h3>
           <ul class="text-white">
             <li class="mb-4">
@@ -28,7 +28,7 @@
           <h3 class="mb-6 text-sm font-semibold text-white uppercase">Contato</h3>
           <p class="text-white">
             Telefone: 800 888 4004
-            Endereço: Av. Principal do Mocambinho, Mocambinho, Teresina - PI, 64000-000, Brasil
+            Endereço: Quadra 34, Casa 44, Conj Mocambinho II - Setor A, 64.010-120, Teresina-PI, Brasil
             E-mail: somosvl@gmail.com
           </p>
         </div>
