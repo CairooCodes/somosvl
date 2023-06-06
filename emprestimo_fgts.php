@@ -22,14 +22,14 @@ $abouts = getAbout();
 <body>
   <?php include "components/navbar.php"; ?>
   <div>
-    <div class="mx-auto max-w-6xl pt-2 about">
+    <div class="mx-auto max-w-6xl pt-2">
       - banners com tipos    tiago
 
       - O que é Empréstimo com Garantia  tiago
       do Saque Aniversário do FGTS?
  
       - vantagens tiago
-      
+
       - É fáci so com botao no whats alex
 
       - Faq alex
