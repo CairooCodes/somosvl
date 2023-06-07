@@ -80,7 +80,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 								</div>
 
 								<h3 id="accordion-flush-heading-2">
-									<button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-1">
+									<button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
 										<span>
 											Quais são as vantagens da Antecipação Saque-Aniversário FGTS?
 										</span>
