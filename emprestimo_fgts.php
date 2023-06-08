@@ -376,7 +376,7 @@ $lpBanner = getLpBanner();
 
     ::-webkit-scrollbar {
       width: 8px;
-      background-color: #F5F5F5;
+      background-color: #5F5F5F;
     }
 
     ::-webkit-scrollbar-thumb {
