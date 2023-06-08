@@ -5,7 +5,7 @@ require "config/url.class.php";
 
 require "./functions/get.php";
 
-// $abouts = getAbout();
+$lpBanner = getLpBanner();
 
 ?>
 <!DOCTYPE html>
@@ -21,7 +21,72 @@ require "./functions/get.php";
 
 <body>
   <?php include "components/navbar.php"; ?>
+  <?php
+  foreach ($lpBanner as $lpBanner) {
+  ?>
+    <div id="minha-div" class="div-com-imagem">
+      <div class="mx-auto max-w-7xl p-12 pt-2 flex flex-col justify-center gap-8 h-full">
+      <h1 style="color: white !important;" class="text-white text-2xl md:text-5xl font-sans font-bold">
+          ANTECIPE ATÉ <span class="text-color2"><br> 5 PARCELAS</span> DO
+          SEU<br>
+          SAQUE<br>
+          ANIVERSÁRIO FGTS
+        </h1>
+      <ul class="list-disc">
+        <li class="text-color2 text-xl md:text-2xl font-sans font-semibold">
+          <span class="text-white">Taxa de juros a partir de 1,69% a.m.*</span>
+        </li>
+        <li class="text-color2 text-xl md:text-2xl font-sans font-semibold">
+          <span class="text-white">Dinheiro rápido mesmo para negativados</span>
+        </li>
+        <li class="text-color2 text-xl md:text-2xl font-sans font-semibold">
+          <span class="text-white">É simples e não precisa ter conta no Safra</span>
+        </li>
+      </ul>
+      <button class="md:w-80 bg-color2 p-3 rounded-full tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
+        Falar com Atendente
+      </button>
+      </div>
+    </div>
+
+    <?php
+    // Supondo que você tenha o conteúdo do Blob em uma variável chamada $blobContent
+    $blobContent = $lpBanner['img'];
+
+    // Codifica o conteúdo do Blob em base64
+    $base64Image = base64_encode($blobContent);
+
+    // Cria uma string base64 para uso como background-image
+    $backgroundImage = "data:image/jpeg;base64," . $base64Image;
+
+    // Obtém as dimensões da imagem usando a biblioteca GD do PHP
+    $imageInfo = getimagesize("data://image/jpeg;base64," . $base64Image);
+    $width = $imageInfo[0];
+    $height = $imageInfo[1];
+    ?>
+
+    <script>
+      var div = document.getElementById('minha-div');
+      div.style.height = "<?php echo $height; ?>px";
+      div.style.backgroundImage = "url('<?php echo $backgroundImage; ?>')";
+    </script>
+
+  <?php
+  }
+  ?>
+
   <div>
+  <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="w-full bg-gradient-to-r from-sky-900 to-fuchsia-900">
+  <div class="flex h-20 w-full items-center justify-around max-w-6xl mx-auto">
+    <a class="text-white text-md font-semibold">O QUE É</a>
+    <a class="text-white text-md font-semibold">VANTAGENS</a>
+    <a class="text-white text-md font-semibold">COMO ADERIR</a>
+    <a class="text-white text-md font-semibold">DÚVIDAS FREQUENTES</a>
+    <button class="bg-color2 p-3 px-8 rounded-full tracking-wide text-lg font-semibold cursor-pointer transition ease-in duration-500 text-white">
+        Quero contratar
+      </button>
+  </div>   
+  </div>
     <div class="mx-auto max-w-6xl pt-2">
       - banners com tipos tiago
 
@@ -296,7 +361,7 @@ require "./functions/get.php";
       </section>
       <input type="hidden" value="3" name="type">
       <div>
-        <button type="submit" class="w-80 flex justify-center ml-96 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
+        <button type="submit" class="w-80 flex justify-center mx-auto bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
           Quero Contratar
         </button>
       </div>
