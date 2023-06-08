@@ -35,13 +35,15 @@ require "./functions/get.php";
       <div>
         <div class="lg:w-2/3 pt-20 px-4 pb-8 mx-auto lg:pb-16">
           <div>
-            <h1 class="mt-5 font-bold lg:text-3xl text-xl text-center mb-3">Deseja aderir o empréstimo com garantia do Saque Aniversário FGTS?</h1>
+            <p class="mt-5 font-bold lg:text-4xl text-xl text-center mb-3">
+              Deseja aderir o empréstimo com garantia do Saque Aniversário FGTS?
+            </p>
           </div>
           <div class="swiper-slide shadow-inner bg-color2 shadow-md rounded-xl border border-gray-300">
-            <div class="max-w-screen-xl px-4 mx-auto mb-3 text-center">
-              <h1 class="mt-5 lg:text-2xl text-xl font-semibold">
+            <div class="max-w-screen-xl px-4 mx-auto mb-3 text-center text-white">
+              <p class="text-white mt-5 lg:text-2xl text-xl font-semibold">
                 Fale agora com um dos nossos atendentes e veja como é fácil aderir a modalidade.
-              </h1>
+              </p>
             </div>
             <form action="./admin/controllers/add_lead.php" method="post">
               <div class="lg:flex justify-center m-5">
@@ -56,7 +58,7 @@ require "./functions/get.php";
             </form>
           </div>
           <div>
-            <button type="submit" class="w-80 flex justify-center mt-5 ml-48 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500">
+            <button type="submit" class="w-80 flex justify-center mt-5 ml-48 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
               Falar com Atendente
             </button>
           </div>
@@ -180,8 +182,8 @@ require "./functions/get.php";
               <div id="accordion-flush-body-7" class="hidden" aria-labelledby="accordion-flush-heading-7">
                 <div class="py-5 border-b border-gray-200">
                   Caso tenha sido contratado o Empréstimo com Garantia do Saque Aniversário do FGTS, a alteração da modalidade só pode ocorrer após a liquidação de todas as parcelas.
-
-                  Importante: quem migrar para o saque aniversário e decidir voltar para a sistemática do saque-rescisão poderá solicitar a reversão a qualquer momento. Mas a alteração somente surtirá efeito no 1º dia do 25º mês da solicitação e desde que o Empréstimo com Garantia de Saque Aniversário FGTS esteja quitado.
+                  <br><br>
+                  <strong>Importante!:</strong> quem migrar para o saque aniversário e decidir voltar para a sistemática do saque-rescisão poderá solicitar a reversão a qualquer momento. Mas a alteração somente surtirá efeito no 1º dia do 25º mês da solicitação e desde que o Empréstimo com Garantia de Saque Aniversário FGTS esteja quitado.
                 </div>
               </div>
 
@@ -214,8 +216,8 @@ require "./functions/get.php";
               <div id="accordion-flush-body-9" class="hidden" aria-labelledby="accordion-flush-heading-9">
                 <div class="py-5 border-b border-gray-200">
                   Sim, é possível pedir a liquidação antecipada do contrato pelo canal do WhatsApp 11 2650-9999 ou pela Central de Atendimento no telefone 0300 151 1234. Lembre-se que, se antecipado, o contrato deverá ser liquidado com recursos próprios, não sendo possível utilizar os recursos da conta do FGTS. Após a quitação do empréstimo, o saldo do FGTS será liberado.
-
-                  Importante! Caso a liquidação antecipada seja realizada durante o período de indisponibilidade do sistema do FGTS (20 dias corridos que antecede o primeiro dia útil do mês de aniversário do cliente), o saldo só poderá ser desbloqueado ao final do período determinado. Se houver algum recebimento indevido de parcela de Saque Aniversário para o Banco J. Safra, os valores serão devolvidos automaticamente para os clientes.
+                  <br><br>
+                  <strong>Importante!:</strong> Caso a liquidação antecipada seja realizada durante o período de indisponibilidade do sistema do FGTS (20 dias corridos que antecede o primeiro dia útil do mês de aniversário do cliente), o saldo só poderá ser desbloqueado ao final do período determinado. Se houver algum recebimento indevido de parcela de Saque Aniversário para o Banco J. Safra, os valores serão devolvidos automaticamente para os clientes.
                 </div>
               </div>
 
@@ -280,11 +282,11 @@ require "./functions/get.php";
               <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
                 <div class="py-5 border-b border-gray-200">
                   O trabalhador pode autorizar o Safra a realizar os seguintes serviços:
-
-                  • Autorização de consulta ao valor do saque-aniversário disponível para alienação/cessão fiduciária;
-
+                  <br>
+                  • Autorização de consulta ao valor do saque-aniversário disponível para alienação/cessão fiduciária
+                  <br>
                   • Autorização para Instituição Financeira consultar e solicitar bloqueio de parte do saldo de sua conta FGTS;
-
+                  <br>
                   • Acompanhar a evolução da operação de alienação ou cessão fiduciária contratada com a Instituição Financeira
                 </div>
               </div>
@@ -294,7 +296,7 @@ require "./functions/get.php";
       </section>
       <input type="hidden" value="3" name="type">
       <div>
-        <button type="submit" class="w-80 flex justify-center ml-96 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500">
+        <button type="submit" class="w-80 flex justify-center ml-96 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
           Quero Contratar
         </button>
       </div>
