@@ -151,7 +151,7 @@ $lpBanner = getLpBanner();
         </div>
       </div>
     </section>
-    <div class="mx-auto max-w-6xl pt-2">
+    <!-- <div class="mx-auto max-w-6xl pt-2">
       - banners com tipos tiago
 
       - O que é Empréstimo com Garantia tiago
@@ -161,10 +161,10 @@ $lpBanner = getLpBanner();
 
       - É fáci so com botao no whats alex
 
-    <div>
+    <div> -->
       <div class="lg:w-2/3 pt-20 px-4 pb-8 mx-auto lg:pb-16">
         <div>
-          <p class="mt-5 font-bold lg:text-4xl text-xl text-center mb-3">
+          <p class="text-fuchsia-900 mt-5 font-bold lg:text-4xl text-xl text-center mb-3">
             Deseja aderir o empréstimo com garantia do Saque Aniversário FGTS?
           </p>
         </div>
@@ -177,17 +177,17 @@ $lpBanner = getLpBanner();
           <form action="./admin/controllers/add_lead.php" method="post">
             <div class="lg:flex justify-center m-5">
               <div>
-                <input class="lg:w-72 w-full mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="text" name="name" id="name" placeholder="Nome">
+                <input class="lg:w-72 w-full mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-fuchsia-900 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="text" name="name" id="name" placeholder="Nome">
               </div>
               <div>
-                <input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="email" name="email" id="email" placeholder="WhatsApp">
+                <input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-fuchsia-900 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="email" name="email" id="email" placeholder="WhatsApp">
               </div>
               <input type="hidden" value="2" name="type">
             </div>
           </form>
         </div>
         <div>
-          <button type="submit" class="w-80 flex justify-center mt-5 ml-72 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
+          <button type="submit" class="w-80 flex justify-center mt-5 ml-48 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
             Falar com Atendente
           </button>
         </div>
@@ -196,14 +196,14 @@ $lpBanner = getLpBanner();
 
     <!-- - Faq alex -->
 
-    <section class="bg-white mt-5">
-      <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6">
-        <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl">
-          Dúvidas Frequentes ?</h2>
+    <section class="bg-white mt-5 text-fuchsia-900">
+      <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 text-fuchsia-900">
+        <p class="mb-6 text-3xl font-extrabold tracking-tight text-center text-fuchsia-900 lg:mb-8 lg:text-3xl">
+          Dúvidas Frequentes ?</p>
         <div class="max-w-screen-md mx-auto">
-          <div id="accordion-flush" data-accordion="collapse" data-active-classes="text-gray-900" data-inactive-classes="text-gray-900">
+          <div id="accordion-flush" data-accordion="collapse" data-active-classes="text-fuchsia-900" data-inactive-classes="text-fuchsia-900">
             <h3 id="accordion-flush-heading-1">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1">
                 <span>
                   O que é o Saque-Aniversário do FGTS?
                 </span>
@@ -219,7 +219,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-2">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
                 <span>
                   Quais as vantagens desse empréstimo?
                 </span>
@@ -235,7 +235,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-3">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
                 <span>
                   Quem pode contratar o Empréstimo com Garantia do Saque-Aniversário FGTS?
                 </span>
@@ -251,7 +251,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-4">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
                 <span>
                   Qual o valor do FGTS que será bloqueado na contratação da operação?
                 </span>
@@ -267,7 +267,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-5">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
                 <span>
                   Quantas parcelas do saque aniversário posso antecipar?
                 </span>
@@ -283,7 +283,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-6">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-6" aria-expanded="false" aria-controls="accordion-flush-body-6">
                 <span>
                   Como eu sei qual valor está disponível para antecipar?
                 </span>
@@ -299,7 +299,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-7">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-7" aria-expanded="false" aria-controls="accordion-flush-body-7">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-7" aria-expanded="false" aria-controls="accordion-flush-body-7">
                 <span>
                   Posso alterar a modalidade de saque aniversário para saque rescisão depois da contratação do produto?
                 </span>
@@ -317,7 +317,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-8">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-8" aria-expanded="false" aria-controls="accordion-flush-body-8">
                 <span>
                   Existe algum período no qual o cliente não consegue efetivar a contratação?
                 </span>
@@ -333,7 +333,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-9">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-9" aria-expanded="false" aria-controls="accordion-flush-body-9">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-9" aria-expanded="false" aria-controls="accordion-flush-body-9">
                 <span>
                   É possível liquidar antecipadamente o empréstimo?
                 </span>
@@ -351,7 +351,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-10">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-10" aria-expanded="false" aria-controls="accordion-flush-body-10">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-10" aria-expanded="false" aria-controls="accordion-flush-body-10">
                 <span>
                   Se eu contratar o Empréstimo com Garantia do Saque Aniversário FGTS, terei a possibilidade de contratar outras linhas de crédito?
                 </span>
@@ -367,7 +367,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-11">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-11" aria-expanded="false" aria-controls="accordion-flush-body-11">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-11" aria-expanded="false" aria-controls="accordion-flush-body-11">
                 <span>
                   Como serão pagas as parcelas do Empréstimo com Garantia do Saque Aniversário FGTS?
                 </span>
@@ -383,7 +383,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-12">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-12" aria-expanded="false" aria-controls="accordion-flush-body-12">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-12" aria-expanded="false" aria-controls="accordion-flush-body-12">
                 <span>
                   Como posso acompanhar minha proposta?
                 </span>
@@ -399,7 +399,7 @@ $lpBanner = getLpBanner();
             </div>
 
             <h3 id="accordion-flush-heading-13">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-gray-800  border-b border-gray-200" data-accordion-target="#accordion-flush-body-13" aria-expanded="false" aria-controls="accordion-flush-body-13">
+              <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-13" aria-expanded="false" aria-controls="accordion-flush-body-13">
                 <span>
                   Quais serviços estou autorizando o Safra a realizar?
                 </span>
@@ -409,7 +409,7 @@ $lpBanner = getLpBanner();
               </button>
             </h3>
             <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
-              <div class="py-5 border-b border-gray-200">
+              <div class="py-5 border-b border-gray-200 text-fuchsia-900">
                 O trabalhador pode autorizar o Safra a realizar os seguintes serviços:
                 <br>
                 • Autorização de consulta ao valor do saque-aniversário disponível para alienação/cessão fiduciária
