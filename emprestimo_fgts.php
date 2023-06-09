@@ -76,7 +76,7 @@ $lpBanner = getLpBanner();
   ?>
 
   <div>
-    <div style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="w-full bg-gradient-to-r from-sky-900 to-fuchsia-900">
+    <section style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="w-full bg-gradient-to-r from-sky-900 to-fuchsia-900">
       <div class="flex h-20 w-full items-center justify-around max-w-6xl mx-auto">
         <a class="text-white text-md font-semibold">O QUE É</a>
         <a class="text-white text-md font-semibold">VANTAGENS</a>
@@ -86,7 +86,72 @@ $lpBanner = getLpBanner();
           Quero Contratar
         </button>
       </div>
-    </div>
+    </section>
+    <section class="pt-20 z-50 bg-white">
+      <div class="mx-auto max-w-6xl">
+        <div>
+          <h4 class="text-4xl font-sans text-fuchsia-900 font-bold">
+            O que é Empréstimo com Garantia <br>
+            do Saque Aniversário do FGTS?
+          </h4>
+          <p class="font-sans text-lg text-fuchsia-900 pt-7">
+            O Empréstimo com Garantia do Saque Aniversário do FGTS é uma modalidade de crédito que possibilita a você, que optou pelo saque aniversário, antecipar parte do saldo disponível na(s) conta(s) vinculada(s) do FGTS, anualmente, no mês de seu aniversário.
+          </p>
+          <p class="font-sans text-lg text-fuchsia-900 pt-4">
+            Aqui na Somos VL, você consegue antecipar até 5 parcelas anuais do seu Saque Aniversário com taxa de juros a partir de 1,69%* a.m.
+          </p>
+        </div>
+        <div class="mx-auto max-w-4xl py-6 flex justify-center items-center">
+          <div>
+            <h4 class="text-fuchsia-900 text-2xl md:text-3xl font-sans font-bold">
+              Taxa de juros <br> baixas
+            </h4>
+            <h6 class="text-fuchsia-800 mt-3 text-lg font-sans">
+              Em comparação a outras <br> ofertas de crédito!
+            </h6>
+            <button class="mt-5 bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
+              Quero Contratar
+            </button>
+          </div>
+          <div class="w-2/3">
+            <div class="shadow-lg w-full rounded-lg overflow-hidden mx-14">
+              <canvas class="p-10" id="chartBar"></canvas>
+            </div>
+
+            <!-- Required chart.js -->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            <!-- Chart bar -->
+            <script>
+              const labelsBarChart = [
+                "FGTS (1,6%)",
+                "Emprestimo Pessoal (10,23%)",
+                "Cheque Pessoal (15,12%)"
+              ];
+              const dataBarChart = {
+                labels: labelsBarChart,
+                datasets: [{
+                  label: "Juros",
+                  backgroundColor: "#A3768B",
+                  data: [1.6, 10.23, 15.12],
+                }, ],
+              };
+
+              const configBarChart = {
+                type: "bar",
+                data: dataBarChart,
+                options: {},
+              };
+
+              var chartBar = new Chart(
+                document.getElementById("chartBar"),
+                configBarChart
+              );
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="mx-auto max-w-6xl pt-2">
       - banners com tipos tiago
 

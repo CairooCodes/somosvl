@@ -19,7 +19,7 @@ function getAbout()
 function getBanners()
 {
   global $pdo;
-  $stmt = $pdo->prepare("SELECT * FROM banners order by id desc");
+  $stmt = $pdo->prepare("SELECT * FROM banners where type = '' order by id desc");
   $stmt->execute();
   return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
