@@ -43,7 +43,9 @@ $lpBanner = getLpBanner();
           </li>
         </ul>
         <button class="md:w-80 bg-color2 p-3 rounded-full text-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
-          Clique aqui para Contratar
+          <a href="#saque_aniversário">
+            Clique aqui para Contratar
+          </a>
         </button>
       </div>
     </div>
@@ -78,16 +80,16 @@ $lpBanner = getLpBanner();
   <div>
     <section style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="w-full bg-gradient-to-r from-sky-900 to-fuchsia-900">
       <div class="flex h-20 w-full items-center justify-around max-w-6xl mx-auto">
-        <a class="text-white text-md font-semibold">O QUE É</a>
-        <a class="text-white text-md font-semibold">VANTAGENS</a>
-        <a class="text-white text-md font-semibold">COMO ADERIR</a>
-        <a class="text-white text-md font-semibold">DÚVIDAS FREQUENTES</a>
-        <button class="bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
+        <a href="#o_que_é" class="text-white text-md font-semibold">O QUE É</a>
+        <a href="#vantagens" class="text-white text-md font-semibold">VANTAGENS</a>
+        <a href="#saque_aniversário" class="text-white text-md font-semibold">COMO ADERIR</a>
+        <a href="#dúvidas_frequentes" class="text-white text-md font-semibold">DÚVIDAS FREQUENTES</a>
+        <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
           Quero Contratar
         </button>
       </div>
     </section>
-    <section class="pt-20 z-50 bg-white">
+    <section class="pt-20 z-50 bg-white" id="o_que_é">
       <div class="mx-auto max-w-6xl">
         <div>
           <h4 class="text-4xl font-sans text-fuchsia-900 font-bold">
@@ -109,7 +111,7 @@ $lpBanner = getLpBanner();
             <h6 class="text-fuchsia-800 mt-3 text-lg font-sans">
               Em comparação a outras <br> ofertas de crédito!
             </h6>
-            <button class="mt-5 bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
+            <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="mt-5 bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
               Quero Contratar
             </button>
           </div>
@@ -153,7 +155,7 @@ $lpBanner = getLpBanner();
       </div>
 
       <!-- VANTAGENS -->
-      <section class="pt-10 bg-color2">
+      <section class="pt-10 bg-color2" id="vantagens">
         <div class="max-w-6xl px-4 pb-8 mx-auto lg:pb-16">
           <p class="uppercase text-4xl text-white font-bold mb-10">VANTAGENS</p>
           <div class="flex flex-nowrap ml-32">
@@ -201,7 +203,7 @@ $lpBanner = getLpBanner();
 
   <!-- FORMULARIO DE COMO ADERIR -->
   </section>
-  <div class="lg:w-2/3 pt-20 px-4 pb-8 mx-auto lg:pb-16">
+  <div class="lg:w-2/3 pt-20 px-4 pb-8 mx-auto lg:pb-16" id="saque_aniversário">
     <div>
       <p class="text-fuchsia-900 mt-5 font-bold lg:text-4xl text-xl text-center mb-3">
         Deseja aderir o empréstimo com garantia do Saque Aniversário FGTS?
@@ -235,7 +237,7 @@ $lpBanner = getLpBanner();
 
   <!-- - FAQ DAS DUVIDAS FREQUENTES -->
 
-  <section class="bg-white mt-5 text-fuchsia-900">
+  <section class="bg-white mt-5 text-fuchsia-900" id="dúvidas_frequentes">
     <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 text-fuchsia-900">
       <p class="mb-6 text-3xl font-extrabold tracking-tight text-center text-fuchsia-900 lg:mb-8 lg:text-3xl">
         Dúvidas Frequentes ?</p>
@@ -469,19 +471,19 @@ $lpBanner = getLpBanner();
     </button>
   </div>
 
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-	<script>
-		$('a[href^="#"]').on('click', function(e) {
-			e.preventDefault();
-			var id = $(this).attr('href'),
-				targetOffset = $(id).offset().top;
 
-			$('html, body').animate({
-				scrollTop: targetOffset - 100
-			}, 500);
-		});
-	</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script>
+    $('a[href^="#"]').on('click', function(e) {
+      e.preventDefault();
+      var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+
+      $('html, body').animate({
+        scrollTop: targetOffset - 100
+      }, 500);
+    });
+  </script>
   <style>
     ::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -501,7 +503,7 @@ $lpBanner = getLpBanner();
     }
   </style>
   <?php include "components/footer.php"; ?>
-  <?php include "components/modal_form_contratar.php";?>
+  <?php include "components/modal_form_contratar.php"; ?>
 </body>
 
 </html>

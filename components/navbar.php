@@ -44,13 +44,13 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
       <div class="flex items-center lg:order-2">
         <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
           <li>
-            <a href="<?php echo $URI->base("home"); ?>" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">HOME</a>
+            <a href="<?php echo $URI->base("/home"); ?>" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">HOME</a>
           </li>
           <li>
             <a href="#servicos" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">SERVIÇOS</a>
           </li>
           <li>
-            <a href="<?php echo $URI->base("quem-somos"); ?>" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">QUEM SOMOS</a>
+            <a href="<?php echo $URI->base("/quem-somos"); ?>" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">QUEM SOMOS</a>
           </li>
           <li>
             <a href="https://wa.me/558008884004" class="block py-2 pl-3 pr-4 text-gray-800 hidden md:block rounded lg:p-0" aria-current="page">CONTATO</a>
