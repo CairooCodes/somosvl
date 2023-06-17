@@ -14,13 +14,13 @@
         </h3>
         <ul class="text-white">
           <li class="mb-4">
-            <a href="<?php echo $URI->base('home.php#servicos') ?>" class="hover:underline">Serviços</a>
+            <a href="<?php echo $URI->base('/home.php#servicos') ?>" class="hover:underline">Serviços</a>
           </li>
           <li class="mb-4">
-            <a href="<?php echo $URI->base('quem-somos.php') ?>" class="hover:underline">Quem Somos</a>
+            <a href="<?php echo $URI->base('/quem-somos.php') ?>" class="hover:underline">Quem Somos</a>
           </li>
           <li class="mb-4">
-            <a href="<?php echo $URI->base('politica-de-privacidade') ?>" class="hover:underline">Política de Privacidade</a>
+            <a href="<?php echo $URI->base('/politica-de-privacidade') ?>" class="hover:underline">Política de Privacidade</a>
           </li>
         </ul>
       </div>

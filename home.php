@@ -42,7 +42,7 @@ $banners = getBanners();
 					</div>
 					<div>
 						<button type="submit" class="w-80 flex justify-center m-5 ml-72 bg-white hover:bg-color1 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-black">
-							Falar com Atendente
+							Enviar
 						</button>
 					</div>
 				</form>

@@ -9,7 +9,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 <header class="w-full shadow">
   <nav class="border-gray-200 py-2.5 bg-white">
     <div class="flex flex-wrap items-center justify-between max-w-6xl px-4 mx-auto">
-      <a href="<?php echo $URI->base("home"); ?>">
+      <a href="<?php echo $URI->base("/home"); ?>">
         <img src="<?php echo $URI->base("/assets/img/$logo"); ?>" class="logo" alt="<?php echo $title; ?>" />
       </a>
       <div class="items-center justify-center hidden w-full lg:flex lg:w-auto lg:order-1">
