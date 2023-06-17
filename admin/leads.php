@@ -89,17 +89,17 @@ $page = 'leads';
         <table class="w-full text-sm text-left text-gray-500">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
-              <th scope="col" class="px-6 py-3">ID</th>
               <th scope="col" class="px-6 py-3">Nome</th>
               <th scope="col" class="px-6 py-3">WhatsApp</th>
+              <th scope="col" class="px-6 py-3">Tipo</th>
             </tr>
           </thead>
           <tbody>
             <?php foreach ($leads as $lead) { ?>
               <tr class="bg-white border-b">
-                <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['id']; ?></td>
                 <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['name']; ?></td>
                 <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['whatsapp']; ?></td>
+                <td class="pl-5 text-gray-900 font-semibold"><?php echo $lead['type']; ?></td>
                 <td class="px-6 py-4">
                   <a href="./controllers/delete_lead.php?id=<?php echo $lead['id']; ?>" type="button" class="font-medium text-red-600 hover:underline">Excluir</a>
                 </td>

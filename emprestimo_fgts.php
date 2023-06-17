@@ -159,38 +159,38 @@ $lpBanner = getLpBanner();
           <div class="flex flex-nowrap ml-32">
             <div class="grid grid-cols-5 gap-5">
               <div class="shadow-inner bg-white shadow-md rounded-xl border border-gray-300">
-                <p class="text-purple-800 font-bold text-lg text-center m-3">
+                <p class="text-fuchsia-900 font-bold text-lg text-center m-3">
                   Taxa de juros
                   <br>
                   a partir
                   <br>
                   de 1,69% a.m.*
                 </p>
-                <h1 class="ml-2 mr-2 text-center">Antecipa até 5 parcelas do seu saque aniversário com a taxa de juros a partir de 1,69% a.m.</h1>
+                <p class="ml-2 mr-2 text-center text-fuchsia-900">Antecipa até 5 parcelas do seu saque aniversário com a taxa de juros a partir de 1,69% a.m.</p>
               </div>
 
               <div class="shadow-inner bg-white shadow-md rounded-xl border border-gray-300">
-                <p class="text-purple-800 font-bold text-lg text-center m-3">
+                <p class="text-fuchsia-900 font-bold text-lg text-center m-3">
                   Não compromete
                   sua renda mensal
                 </p>
-                <h1 class="ml-2 mr-2 text-center">O pagamento das parcelas do empréstimo é realizado mediante o débito direto na(s) conta(s) vinculada(s) do FGTS, anualmente, no mês do seu aniversário.</h1>
+                <p class="ml-2 mr-2 text-center text-fuchsia-900">O pagamento das parcelas do empréstimo é realizado mediante o débito direto na(s) conta(s) vinculada(s) do FGTS, anualmente, no mês do seu aniversário.</p>
               </div>
 
               <div class="shadow-inner bg-white shadow-md rounded-xl border border-gray-300">
-                <p class="text-purple-800 font-bold text-lg text-center m-3">
+                <p class="text-fuchsia-900 font-bold text-lg text-center m-3">
                   Dinheiro rápido
                   mesmo para
                   negativados
                 </p>
-                <h1 class="ml-2 mr-2 text-center">Aqui na Safra Financeira os clientes negativados podem contratar o Empréstimo com Garantia do Saque Aniversário FGTS.</h1>
+                <p class="ml-2 mr-2 text-center text-fuchsia-900">Aqui na Safra Financeira os clientes negativados podem contratar o Empréstimo com Garantia do Saque Aniversário FGTS.</p>
               </div>
 
               <div class="shadow-inner bg-white shadow-md rounded-xl border border-gray-300">
-                <p class="text-purple-800 font-bold text-lg text-center m-3">
+                <p class="text-fuchsia-900 font-bold text-lg text-center m-3">
                   Disponível também para quem não tem conta no Safra
                 </p>
-                <h1 class="ml-2 mr-2 text-center">Não é necessário ter conta no Safra para contratar o Empréstimo com Garantia do Saque Aniversário FGTS.</h1>
+                <p class="ml-2 mr-2 text-center text-fuchsia-900">Não é necessário ter conta no Safra para contratar o Empréstimo com Garantia do Saque Aniversário FGTS.</p>
               </div>
             </div>
           </div>
@@ -216,19 +216,19 @@ $lpBanner = getLpBanner();
       <form action="./admin/controllers/add_lead.php" method="post">
         <div class="lg:flex justify-center m-5">
           <div>
-            <input class="lg:w-72 w-full mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-fuchsia-900 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="text" name="name" id="name" placeholder="Nome">
+            <input class="lg:w-72 w-full mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="text" name="name" id="name" placeholder="Nome">
           </div>
           <div>
-            <input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-fuchsia-900 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="email" name="email" id="email" placeholder="WhatsApp">
+            <input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="whatsapp" name="whatsapp" id="whatsapp" placeholder="WhatsApp">
           </div>
           <input type="hidden" value="2" name="type">
         </div>
+        <div>
+          <button type="submit" class="w-80 flex justify-center m-5 ml-72 bg-white hover:bg-color1 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-fuchsia-900">
+            Falar com Atendente
+          </button>
+        </div>
       </form>
-    </div>
-    <div>
-      <button type="submit" class="w-80 flex justify-center mt-5 ml-72 bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
-        Falar com Atendente
-      </button>
     </div>
   </div>
   </div>
@@ -464,10 +464,24 @@ $lpBanner = getLpBanner();
   </section>
   </div>
   <div>
-    <a href="emprestimo_fgts.php" class="w-80 flex justify-center mx-auto bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
+    <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="w-80 flex justify-center mx-auto bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
       Quero Contratar
-    </a>
+    </button>
   </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+	<script>
+		$('a[href^="#"]').on('click', function(e) {
+			e.preventDefault();
+			var id = $(this).attr('href'),
+				targetOffset = $(id).offset().top;
+
+			$('html, body').animate({
+				scrollTop: targetOffset - 100
+			}, 500);
+		});
+	</script>
   <style>
     ::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -487,6 +501,7 @@ $lpBanner = getLpBanner();
     }
   </style>
   <?php include "components/footer.php"; ?>
+  <?php include "components/modal_form_contratar.php";?>
 </body>
 
 </html>

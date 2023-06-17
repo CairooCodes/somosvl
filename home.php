@@ -36,25 +36,35 @@ $banners = getBanners();
 							<input class="lg:w-72 w-full mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="text" name="name" id="name" placeholder="Nome">
 						</div>
 						<div>
-							<input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="email" name="email" id="email" placeholder="WhatsApp">
+							<input class="lg:w-72 w-full  mr-5 mt-2 bg-gray-50 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus-ring-2 focus:ring-blue-500 focus:ring-opacity-20 rounded-md px-3 py-3 text-sm text-gray-800 placeholder-gray-600 focus:outline-none transition duration-400 ease-in-out" type="whatsapp" name="whatsapp" id="whatsapp" placeholder="WhatsApp">
 						</div>
 						<input type="hidden" value="1" name="type">
-						<div>
-							<button class="lg:mt-0 mt-2 flex justify-center items-center lg:w-14 w-full lg:h-14 h-12 bg-green-600 rounded-lg lg:rounded-full">
-								<svg class="hidden lg:block" width="30" height="30" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M25 11.5L0 0L4.5 11.5L0 22.5L25 11.5Z" fill="white" />
-								</svg>
-								<span class="lg:hidden" type="submit">Enviar</span>
-							</button>
-						</div>
+					</div>
+					<div>
+						<button type="submit" class="w-80 flex justify-center m-5 ml-72 bg-white hover:bg-color1 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-black">
+							Falar com Atendente
+						</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
 	<?php include "components/footer.php"; ?>
+	<?php include "components/modal_form_contratar.php"; ?>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+	<script>
+		$('a[href^="#"]').on('click', function(e) {
+			e.preventDefault();
+			var id = $(this).attr('href'),
+				targetOffset = $(id).offset().top;
+
+			$('html, body').animate({
+				scrollTop: targetOffset - 100
+			}, 500);
+		});
+	</script>
 	<script>
 		var swiper = new Swiper(".swiper_banners", {
 			loop: true,
