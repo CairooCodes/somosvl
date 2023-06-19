@@ -15,6 +15,7 @@ $lpBanner = getLpBanner();
   <?php include "heads.php"; ?>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/swiper.css">
+  <meta property="og:title" content="Empréstimo FGTS - Somos VL" />
 </head>
 
 
@@ -90,7 +91,7 @@ $lpBanner = getLpBanner();
       </div>
     </section>
     <section class="pt-20 z-50 bg-white" id="o_que_é">
-      <div class="mx-auto px-24 max-w-6xl">
+      <div class="mx-auto px-6 max-w-6xl">
         <div>
           <h4 class="text-4xl font-sans text-fuchsia-900 font-bold">
             O que é Empréstimo com Garantia <br>
