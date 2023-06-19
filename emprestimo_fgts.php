@@ -26,20 +26,20 @@ $lpBanner = getLpBanner();
     <div id="minha-div" class="div-com-imagem">
       <div class="mx-auto max-w-7xl p-12 pt-2 flex flex-col justify-center gap-8 h-full">
         <h1 style="color: white !important;" class="text-white text-2xl md:text-5xl font-sans font-bold">
-          ANTECIPE ATÉ <span class="text-color2"><br> 5 PARCELAS</span> DO
+          ANTECIPE ATÉ <span class="text-color2"><br> 10 PARCELAS</span> DO
           SEU<br>
           SAQUE<br>
           ANIVERSÁRIO FGTS
         </h1>
         <ul class="list-disc">
           <li class="text-color2 text-xl md:text-2xl font-sans font-semibold">
-            <span class="text-white">Taxa de juros a partir de 1,69% a.m.*</span>
+            <span class="text-white">Taxa de juros a partir de 1,99% a.m.*</span>
           </li>
           <li class="text-color2 text-xl md:text-2xl font-sans font-semibold">
             <span class="text-white">Dinheiro rápido mesmo para negativados</span>
           </li>
           <li class="text-color2 text-xl md:text-2xl font-sans font-semibold">
-            <span class="text-white">É simples e não precisa ter conta no VL</span>
+            <span class="text-white">É simples e sem pagamento de parcelas mensais</span>
           </li>
         </ul>
         <button class="md:w-80 bg-color2 p-3 rounded-full text-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
@@ -78,7 +78,7 @@ $lpBanner = getLpBanner();
 
   <!-- BARRA DE NAVEGAÇÃO -->
   <div>
-    <section style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="w-full bg-gradient-to-r from-sky-900 to-fuchsia-900">
+    <section style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" class="w-full hidden md:block bg-gradient-to-r from-sky-900 to-fuchsia-900">
       <div class="flex h-20 w-full items-center justify-around max-w-6xl mx-auto">
         <a href="#o_que_é" class="text-white text-md font-semibold">O QUE É</a>
         <a href="#vantagens" class="text-white text-md font-semibold">VANTAGENS</a>
@@ -90,7 +90,7 @@ $lpBanner = getLpBanner();
       </div>
     </section>
     <section class="pt-20 z-50 bg-white" id="o_que_é">
-      <div class="mx-auto max-w-6xl">
+      <div class="mx-auto px-24 max-w-6xl">
         <div>
           <h4 class="text-4xl font-sans text-fuchsia-900 font-bold">
             O que é Empréstimo com Garantia <br>
@@ -100,22 +100,22 @@ $lpBanner = getLpBanner();
             O Empréstimo com Garantia do Saque Aniversário do FGTS é uma modalidade de crédito que possibilita a você, que optou pelo saque aniversário, antecipar parte do saldo disponível na(s) conta(s) vinculada(s) do FGTS, anualmente, no mês de seu aniversário.
           </p>
           <p class="font-sans text-lg text-fuchsia-900 pt-4">
-            Aqui na Somos VL, você consegue antecipar até 5 parcelas anuais do seu Saque Aniversário com taxa de juros a partir de 1,69%* a.m.
+            Aqui na VL Consultorias, você consegue antecipar até 10 parcelas anuais do seu Saque Aniversário com taxa de juros a partir de 1,99%* a.m.
           </p>
         </div>
-        <div class="mx-auto max-w-4xl py-6 flex justify-center items-center">
-          <div>
+        <div class="mx-auto max-w-4xl py-6 md:flex justify-center items-center">
+          <div class="grid justify-center">
             <h4 class="text-fuchsia-900 text-2xl md:text-3xl font-sans font-bold">
               Taxa de juros <br> baixas
             </h4>
             <h6 class="text-fuchsia-800 mt-3 text-lg font-sans">
               Em comparação a outras <br> ofertas de crédito!
             </h6>
-            <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="mt-5 bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
+            <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="mt-5 bg-color2 mx-auto p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
               Quero Contratar
             </button>
           </div>
-          <div class="w-2/3">
+          <div class="hidden md:block  w-2/3">
             <div class="shadow-lg w-full rounded-lg overflow-hidden mx-14">
               <canvas class="p-10" id="chartBar"></canvas>
             </div>
@@ -158,8 +158,8 @@ $lpBanner = getLpBanner();
       <section class="pt-10 bg-color2" id="vantagens">
         <div class="max-w-6xl px-4 pb-8 mx-auto lg:pb-16">
           <p class="uppercase text-4xl text-white font-bold mb-10">VANTAGENS</p>
-          <div class="flex flex-nowrap ml-32">
-            <div class="grid grid-cols-5 gap-5">
+          <div class="flex flex-nowrap  mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
               <div class="shadow-inner bg-white shadow-md rounded-xl border border-gray-300">
                 <p class="text-fuchsia-900 font-bold text-lg text-center m-3">
                   Taxa de juros
@@ -226,7 +226,7 @@ $lpBanner = getLpBanner();
           <input type="hidden" value="2" name="type">
         </div>
         <div>
-          <button type="submit" class="w-80 flex justify-center m-5 ml-72 bg-white hover:bg-color1 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-fuchsia-900">
+          <button type="submit" class="md:w-80 flex justify-center m-5 mx-auto bg-white hover:bg-color1 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-fuchsia-900">
             Enviar
           </button>
         </div>
@@ -240,7 +240,7 @@ $lpBanner = getLpBanner();
   <section class="bg-white mt-5 text-fuchsia-900" id="dúvidas_frequentes">
     <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 text-fuchsia-900">
       <p class="mb-6 text-3xl font-extrabold tracking-tight text-center text-fuchsia-900 lg:mb-8 lg:text-3xl">
-        Dúvidas Frequentes ?</p>
+        Dúvidas Frequentes</p>
       <div class="max-w-screen-md mx-auto">
         <div id="accordion-flush" data-accordion="collapse" data-active-classes="text-fuchsia-900" data-inactive-classes="text-fuchsia-900">
           <h3 id="accordion-flush-heading-1">
@@ -287,7 +287,7 @@ $lpBanner = getLpBanner();
           </h3>
           <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
             <div class="py-5 border-b border-gray-200">
-              Todos os trabalhadores que possuam saldo disponível em sua(s) conta(s) vinculada(s) do FGTS (contas ativas e inativas), que tenham optado pela modalidade do saque aniversário e autorizado o Banco J. Safra a consultar o saldo disponível.
+              Todos os trabalhadores que possuam saldo disponível em sua(s) conta(s) vinculada(s) do FGTS (contas ativas e inativas), que tenham optado pela modalidade do saque aniversário e autorizado os bancos parceiros a consultarem o saldo disponível.
             </div>
           </div>
 
@@ -304,22 +304,6 @@ $lpBanner = getLpBanner();
           <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
             <div class="py-5 border-b border-gray-200">
               Será bloqueado o valor correspondente ao percentual do(s) saldo(s) da(s) conta(s) vinculada(s) do FGTS, em valor suficiente para, aplicada a alíquota correspondente ao saldo da conta disponível na data da operação e acrescida à parcela adicional, estabelecidas no Anexo à Lei nº 8.036, de 1990, ou em suas alterações posteriores, seja possível a realização do(s) saque(s) aniversário em valor equivalente ao dado em garantia na contratação do empréstimo.
-            </div>
-          </div>
-
-          <h3 id="accordion-flush-heading-5">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
-              <span>
-                Quantas parcelas do saque aniversário posso antecipar?
-              </span>
-              <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </h3>
-          <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
-            <div class="py-5 border-b border-gray-200">
-              Será possível a antecipação de até 5 parcelas anuais do saque aniversário do FGTS.
             </div>
           </div>
 
@@ -373,24 +357,6 @@ $lpBanner = getLpBanner();
             </div>
           </div>
 
-          <h3 id="accordion-flush-heading-9">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-9" aria-expanded="false" aria-controls="accordion-flush-body-9">
-              <span>
-                É possível liquidar antecipadamente o empréstimo?
-              </span>
-              <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </h3>
-          <div id="accordion-flush-body-9" class="hidden" aria-labelledby="accordion-flush-heading-9">
-            <div class="py-5 border-b border-gray-200">
-              Sim, é possível pedir a liquidação antecipada do contrato pelo canal do WhatsApp 11 2650-9999 ou pela Central de Atendimento no telefone 0300 151 1234. Lembre-se que, se antecipado, o contrato deverá ser liquidado com recursos próprios, não sendo possível utilizar os recursos da conta do FGTS. Após a quitação do empréstimo, o saldo do FGTS será liberado.
-              <br><br>
-              <strong>Importante!:</strong> Caso a liquidação antecipada seja realizada durante o período de indisponibilidade do sistema do FGTS (20 dias corridos que antecede o primeiro dia útil do mês de aniversário do cliente), o saldo só poderá ser desbloqueado ao final do período determinado. Se houver algum recebimento indevido de parcela de Saque Aniversário para o Banco J. Safra, os valores serão devolvidos automaticamente para os clientes.
-            </div>
-          </div>
-
           <h3 id="accordion-flush-heading-10">
             <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-10" aria-expanded="false" aria-controls="accordion-flush-body-10">
               <span>
@@ -439,27 +405,6 @@ $lpBanner = getLpBanner();
             </div>
           </div>
 
-          <h3 id="accordion-flush-heading-13">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-bold text-left text-fuchsia-900  border-b border-gray-200" data-accordion-target="#accordion-flush-body-13" aria-expanded="false" aria-controls="accordion-flush-body-13">
-              <span>
-                Quais serviços estou autorizando o Safra a realizar?
-              </span>
-              <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </h3>
-          <div id="accordion-flush-body-13" class="hidden" aria-labelledby="accordion-flush-heading-13">
-            <div class="py-5 border-b border-gray-200 text-fuchsia-900">
-              O trabalhador pode autorizar o Safra a realizar os seguintes serviços:
-              <br>
-              • Autorização de consulta ao valor do saque-aniversário disponível para alienação/cessão fiduciária
-              <br>
-              • Autorização para Instituição Financeira consultar e solicitar bloqueio de parte do saldo de sua conta FGTS;
-              <br>
-              • Acompanhar a evolução da operação de alienação ou cessão fiduciária contratada com a Instituição Financeira
-            </div>
-          </div>
         </div>
       </div>
     </div>
