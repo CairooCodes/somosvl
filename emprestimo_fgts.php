@@ -19,7 +19,7 @@ $lpBanner = getLpBanner();
 
 
 <body>
-  <?php include "components/navbar.php"; ?>
+  <?php include "components/navbar_landingpage.php"; ?>
   <?php
   foreach ($lpBanner as $lpBanner) {
   ?>
@@ -43,7 +43,7 @@ $lpBanner = getLpBanner();
           </li>
         </ul>
         <button class="md:w-80 bg-color2 p-3 rounded-full text-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
-          <a href="#saque_aniversário">
+          <a href="https://wa.me/message/YQ54VQBLS6SXP1">
             Clique aqui para Contratar
           </a>
         </button>
@@ -82,10 +82,12 @@ $lpBanner = getLpBanner();
       <div class="flex h-20 w-full items-center justify-around max-w-6xl mx-auto">
         <a href="#o_que_é" class="text-white text-md font-semibold">O QUE É</a>
         <a href="#vantagens" class="text-white text-md font-semibold">VANTAGENS</a>
-        <a href="#saque_aniversário" class="text-white text-md font-semibold">COMO ADERIR</a>
+        <a href="https://wa.me/message/YQ54VQBLS6SXP1" class="text-white text-md font-semibold">COMO ADERIR</a>
         <a href="#dúvidas_frequentes" class="text-white text-md font-semibold">DÚVIDAS FREQUENTES</a>
-        <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
-          Quero Contratar
+        <button class="bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
+          <a href="https://wa.me/message/YQ54VQBLS6SXP1">
+            Quero Contratar
+          </a>
         </button>
       </div>
     </section>
@@ -111,8 +113,10 @@ $lpBanner = getLpBanner();
             <h6 class="text-fuchsia-800 mt-3 text-lg font-sans">
               Em comparação a outras <br> ofertas de crédito!
             </h6>
-            <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="mt-5 bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
-              Quero Contratar
+            <button class="mt-5 bg-color2 p-3 px-8 rounded-full tracking-wide text-md font-semibold cursor-pointer transition ease-in duration-500 text-white">
+              <a href="https://wa.me/message/YQ54VQBLS6SXP1">
+                Quero Contratar
+              </a>
             </button>
           </div>
           <div class="w-2/3">
@@ -155,11 +159,11 @@ $lpBanner = getLpBanner();
       </div>
 
       <!-- VANTAGENS -->
-      <section class="pt-10 bg-color2" id="vantagens">
-        <div class="max-w-6xl px-4 pb-8 mx-auto lg:pb-16">
+      <section class="pt-10 bg-color2 " id="vantagens">
+        <div class="max-w-6xl px-4 pb-8 mx-auto">
           <p class="uppercase text-4xl text-white font-bold mb-10">VANTAGENS</p>
           <div class="flex flex-nowrap ml-32">
-            <div class="grid grid-cols-5 gap-5">
+            <div class="lg:grid lg:grid-cols-5 gap-5">
               <div class="shadow-inner bg-white shadow-md rounded-xl border border-gray-300">
                 <p class="text-fuchsia-900 font-bold text-lg text-center m-3">
                   Taxa de juros
@@ -202,7 +206,7 @@ $lpBanner = getLpBanner();
   </section>
 
   <!-- FORMULARIO DE COMO ADERIR -->
-  </section>
+  <!-- </section>
   <div class="lg:w-2/3 pt-20 px-4 pb-8 mx-auto lg:pb-16" id="saque_aniversário">
     <div>
       <p class="text-fuchsia-900 mt-5 font-bold lg:text-4xl text-xl text-center mb-3">
@@ -233,7 +237,7 @@ $lpBanner = getLpBanner();
       </form>
     </div>
   </div>
-  </div>
+  </div> -->
 
   <!-- - FAQ DAS DUVIDAS FREQUENTES -->
 
@@ -466,10 +470,18 @@ $lpBanner = getLpBanner();
   </section>
   </div>
   <div>
-    <button data-modal-target="addUserModal" data-modal-show="addUserModal" class="w-80 flex justify-center mx-auto bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
-      Quero Contratar
+    <button class="w-80 flex justify-center mx-auto bg-color2 p-3 rounded-lg tracking-wide font-semibold cursor-pointer transition ease-in duration-500 text-white">
+      <a href="https://wa.me/message/YQ54VQBLS6SXP1">
+        Quero Contratar
+      </a>
     </button>
   </div>
+  <div class="pt-16 max-w-screen-xl px-4 mx-auto lg:px-6">
+    <p class="text-xs text-fuchsia-900 text-justify font-normal">
+      * Aprovação sujeita a consuta e análise cadastral, de crédito e demais condições do produto vigentes no momento da contratação. Exija a sua planilha CET (Custo Efetivo Total) previamente a contratação. A planilha tem a finalidade de informar ao consumidor a taxa efetiva total do seu financiamento considerando todos os encargos e despesas incidentes na operação (taxa de juros ao mês e ao ano, tarifas, seguro prestamista, registro, etc). Empréstimo concedido pelo Banco J. Safra S.A.. Parcelas do empréstimo debitadas anualmente direto na(s) conta(s) vinculada(s) do FGTS. Para contratar, é necessário optar pelo saque aniversário no App ou site oficial do FGTS e autorizar o Banco J Safra a consultar o valor disponível.
+    </p>
+  </div>
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
@@ -503,7 +515,6 @@ $lpBanner = getLpBanner();
     }
   </style>
   <?php include "components/footer.php"; ?>
-  <?php include "components/modal_form_contratar.php"; ?>
 </body>
 
 </html>
