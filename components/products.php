@@ -23,7 +23,7 @@
             <?php echo $info ?>
           </div>
           <div class="flex justify-center">
-            <a href="<?php echo $URI->base('servico/' . slugify($name)); ?>" class="text-white bg-color2 focus:ring-4 rounded-md font-bold text-lg px-5 py-2 text-center">Saiba mais</a>
+            <a href="<?php echo if $name == "saque-aniversario-fgts" { echo "https://somosvl.com.br/emprestimo-fgts" } else { echo $URI->base('servico/' . slugify($name)); } ?>" class="text-white bg-color2 focus:ring-4 rounded-md font-bold text-lg px-5 py-2 text-center">Saiba mais</a>
           </div>
         </div>
       </div>
